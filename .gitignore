@@ -1,0 +1,34 @@
+﻿# Full datasets
+/data/
+/data_1/
+/data_hard/
+/raw/
+
+# Training outputs
+/outputs/
+/outputs_data1_clean/
+/outputs_data_hard/
+/runs/
+/logs/
+
+# Model weights and exports
+*.pt
+*.pth
+*.onnx
+*.engine
+*.ckpt
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db

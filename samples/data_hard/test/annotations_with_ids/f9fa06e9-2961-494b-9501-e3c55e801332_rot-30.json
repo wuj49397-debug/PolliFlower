@@ -1,0 +1,276 @@
+{
+  "version": "4.0.0-beta.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "bitter melon flower",
+      "score": null,
+      "points": [
+        [
+          674.0079365079365,
+          510.63095238095235
+        ],
+        [
+          814.8809523809524,
+          510.63095238095235
+        ],
+        [
+          814.8809523809524,
+          652.297619047619
+        ],
+        [
+          674.0079365079365,
+          652.297619047619
+        ]
+      ],
+      "group_id": 1,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {
+        "instance_id": 1,
+        "instance_role": "rectangle",
+        "instance_match_strategy": "sorted_by_center"
+      },
+      "kie_linking": []
+    },
+    {
+      "label": "stigma region",
+      "score": null,
+      "points": [
+        [
+          730.272952853598,
+          570.0578990901572
+        ],
+        [
+          724.9793217535153,
+          574.1935483870967
+        ],
+        [
+          721.0090984284532,
+          578.9909015715467
+        ],
+        [
+          718.8585607940446,
+          584.9462365591398
+        ],
+        [
+          719.3548387096773,
+          591.3978494623655
+        ],
+        [
+          721.8362282878411,
+          597.3531844499586
+        ],
+        [
+          727.460711331679,
+          600.1654259718775
+        ],
+        [
+          734.5740281224151,
+          600.8271298593878
+        ],
+        [
+          741.3564929693961,
+          600.6617038875103
+        ],
+        [
+          747.6426799007444,
+          600.0
+        ],
+        [
+          752.936311000827,
+          595.20264681555
+        ],
+        [
+          756.7411083540115,
+          589.5781637717121
+        ],
+        [
+          756.4102564102562,
+          582.6302729528536
+        ],
+        [
+          753.2671629445822,
+          577.1712158808932
+        ],
+        [
+          747.3118279569892,
+          574.0281224152192
+        ],
+        [
+          741.3564929693961,
+          572.2084367245657
+        ],
+        [
+          734.9048800661703,
+          571.3813068651777
+        ]
+      ],
+      "group_id": 1,
+      "description": "",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {
+        "instance_id": 1,
+        "instance_role": "polygon",
+        "instance_match_strategy": "bbox_contains_polygon"
+      },
+      "kie_linking": []
+    },
+    {
+      "label": "pollination point",
+      "score": null,
+      "points": [
+        [
+          738.7096774193548,
+          586.2696443341604
+        ]
+      ],
+      "group_id": 1,
+      "description": "",
+      "difficult": false,
+      "shape_type": "point",
+      "flags": {},
+      "attributes": {
+        "instance_id": 1,
+        "instance_role": "point",
+        "instance_match_strategy": "point_in_polygon"
+      },
+      "kie_linking": []
+    },
+    {
+      "label": "bitter melon flower",
+      "score": null,
+      "points": [
+        [
+          376.09941520467834,
+          757.3099415204676
+        ],
+        [
+          533.7017543859649,
+          757.3099415204676
+        ],
+        [
+          533.7017543859649,
+          917.5438596491227
+        ],
+        [
+          376.09941520467834,
+          917.5438596491227
+        ]
+      ],
+      "group_id": 2,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {
+        "instance_id": 2,
+        "instance_role": "rectangle",
+        "instance_match_strategy": "sorted_by_center"
+      },
+      "kie_linking": []
+    },
+    {
+      "label": "stigma region",
+      "score": null,
+      "points": [
+        [
+          456.3963963963963,
+          827.0900900900901
+        ],
+        [
+          450.99099099099095,
+          832.4954954954956
+        ],
+        [
+          447.9279279279279,
+          838.6216216216217
+        ],
+        [
+          445.7657657657657,
+          845.4684684684684
+        ],
+        [
+          447.20720720720715,
+          853.036036036036
+        ],
+        [
+          452.072072072072,
+          857.9009009009009
+        ],
+        [
+          462.3423423423423,
+          858.6216216216217
+        ],
+        [
+          470.27027027027026,
+          858.2612612612612
+        ],
+        [
+          476.9369369369369,
+          855.918918918919
+        ],
+        [
+          481.6216216216216,
+          850.6936936936937
+        ],
+        [
+          474.7747747747747,
+          845.8288288288288
+        ],
+        [
+          468.10810810810807,
+          843.1261261261261
+        ],
+        [
+          462.16216216216213,
+          839.3423423423424
+        ],
+        [
+          457.8378378378378,
+          833.0360360360361
+        ]
+      ],
+      "group_id": 2,
+      "description": "",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {
+        "instance_id": 2,
+        "instance_role": "polygon",
+        "instance_match_strategy": "bbox_contains_polygon"
+      },
+      "kie_linking": []
+    },
+    {
+      "label": "pollination point",
+      "score": null,
+      "points": [
+        [
+          458.19819819819816,
+          847.990990990991
+        ]
+      ],
+      "group_id": 2,
+      "description": "",
+      "difficult": false,
+      "shape_type": "point",
+      "flags": {},
+      "attributes": {
+        "instance_id": 2,
+        "instance_role": "point",
+        "instance_match_strategy": "point_in_polygon"
+      },
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "f9fa06e9-2961-494b-9501-e3c55e801332_rot-30.png",
+  "imageData": null,
+  "imageHeight": 1304,
+  "imageWidth": 1206
+}

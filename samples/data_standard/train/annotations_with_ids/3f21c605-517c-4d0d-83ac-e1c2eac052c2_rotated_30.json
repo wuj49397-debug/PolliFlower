@@ -1,0 +1,237 @@
+{
+  "version": "4.0.0-beta.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "watermelon flower",
+      "score": null,
+      "points": [
+        [
+          420.50925925925924,
+          425.8425925925926
+        ],
+        [
+          586.25,
+          425.8425925925926
+        ],
+        [
+          586.25,
+          592.5092592592591
+        ],
+        [
+          420.50925925925924,
+          592.5092592592591
+        ]
+      ],
+      "group_id": 1,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {
+        "instance_id": 1,
+        "instance_role": "rectangle",
+        "instance_match_strategy": "sorted_by_center"
+      },
+      "kie_linking": []
+    },
+    {
+      "label": "stigma region",
+      "score": null,
+      "points": [
+        [
+          511.0,
+          511.0
+        ],
+        [
+          510.0,
+          512.0
+        ],
+        [
+          510.0,
+          513.0
+        ],
+        [
+          508.0,
+          515.0
+        ],
+        [
+          507.0,
+          515.0
+        ],
+        [
+          507.0,
+          518.0
+        ],
+        [
+          506.0,
+          519.0
+        ],
+        [
+          506.0,
+          522.0
+        ],
+        [
+          505.0,
+          523.0
+        ],
+        [
+          505.0,
+          532.0
+        ],
+        [
+          506.0,
+          533.0
+        ],
+        [
+          506.0,
+          534.0
+        ],
+        [
+          511.0,
+          539.0
+        ],
+        [
+          512.0,
+          539.0
+        ],
+        [
+          513.0,
+          540.0
+        ],
+        [
+          514.0,
+          540.0
+        ],
+        [
+          515.0,
+          541.0
+        ],
+        [
+          521.0,
+          541.0
+        ],
+        [
+          522.0,
+          540.0
+        ],
+        [
+          524.0,
+          540.0
+        ],
+        [
+          525.0,
+          539.0
+        ],
+        [
+          526.0,
+          539.0
+        ],
+        [
+          527.0,
+          538.0
+        ],
+        [
+          531.0,
+          538.0
+        ],
+        [
+          535.0,
+          534.0
+        ],
+        [
+          535.0,
+          533.0
+        ],
+        [
+          536.0,
+          532.0
+        ],
+        [
+          536.0,
+          530.0
+        ],
+        [
+          537.0,
+          529.0
+        ],
+        [
+          537.0,
+          519.0
+        ],
+        [
+          534.0,
+          516.0
+        ],
+        [
+          534.0,
+          515.0
+        ],
+        [
+          531.0,
+          512.0
+        ],
+        [
+          530.0,
+          512.0
+        ],
+        [
+          529.0,
+          511.0
+        ],
+        [
+          525.0,
+          511.0
+        ],
+        [
+          524.0,
+          510.0
+        ],
+        [
+          514.0,
+          510.0
+        ],
+        [
+          513.0,
+          511.0
+        ]
+      ],
+      "group_id": 1,
+      "description": "",
+      "difficult": false,
+      "shape_type": "polygon",
+      "flags": {},
+      "attributes": {
+        "instance_id": 1,
+        "instance_role": "polygon",
+        "instance_match_strategy": "bbox_contains_polygon"
+      },
+      "kie_linking": []
+    },
+    {
+      "label": "pollination point",
+      "score": null,
+      "points": [
+        [
+          521.069182389937,
+          525.9433962264151
+        ]
+      ],
+      "group_id": 1,
+      "description": "",
+      "difficult": false,
+      "shape_type": "point",
+      "flags": {},
+      "attributes": {
+        "instance_id": 1,
+        "instance_role": "point",
+        "instance_match_strategy": "point_in_polygon"
+      },
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "3f21c605-517c-4d0d-83ac-e1c2eac052c2_rotated_30.png",
+  "imageData": null,
+  "imageHeight": 1004,
+  "imageWidth": 1060
+}
