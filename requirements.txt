@@ -1,0 +1,25 @@
+# PolliFlower baseline dependencies.
+#
+# Python version used in the experiments:
+#   Python 3.11.15
+#
+# Install PyTorch and torchvision separately according to your CUDA version.
+# The reported experiments used:
+#   torch==2.11.0+cu128
+#   torchvision==0.26.0+cu128
+#
+# Example:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+
+ultralytics==8.4.51
+opencv-python==4.13.0.92
+numpy==2.4.4
+pillow==12.2.0
+pycocotools>=2.0.7
+torchmetrics==1.9.0
+transformers==5.8.1
+accelerate==1.13.0
+scipy==1.17.1
+tqdm==4.67.3
+matplotlib==3.10.9
+PyYAML==6.0.3
