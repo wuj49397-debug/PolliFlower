@@ -1,0 +1,38 @@
+
+**LICENSE**
+```markdown
+# PolliFlower Repository License
+
+Copyright (c) 2026 PolliFlower Authors.
+
+This repository contains source code, documentation, sample images, and sample annotations for the PolliFlower dataset and benchmark.
+
+## 1. Source Code
+
+The source code in this repository is released for academic research and educational use. You may use, modify, and adapt the code for non-commercial research purposes, provided that proper attribution is given to the PolliFlower project.
+
+## 2. Sample Data
+
+The sample images and sample annotations provided in this repository are released only for demonstration of the PolliFlower annotation format, benchmark tasks, and evaluation protocol.
+
+The sample data may be used for academic research, teaching, and reproduction of the repository examples. The sample data may not be sold, sublicensed, redistributed as a standalone dataset, or used for commercial products or services without explicit written permission from the PolliFlower maintainers.
+
+## 3. Full Dataset
+
+The complete PolliFlower dataset is not publicly redistributable through this repository. Access to the full dataset is granted only upon request and under a separate PolliFlower Data Use Agreement.
+
+Users who obtain the full dataset may not redistribute, sublicense, sell, publish, or host the full dataset or any substantial subset of it without explicit written permission from the PolliFlower maintainers.
+
+## 4. Model Weights
+
+This repository does not include trained model weights or third-party pretrained weights. Users are responsible for obtaining pretrained weights from their original sources and complying with the corresponding licenses.
+
+## 5. Citation
+
+Any academic use of the PolliFlower dataset, sample data, scripts, benchmark protocol, or derived results should cite the PolliFlower paper after publication.
+
+## 6. Disclaimer
+
+The PolliFlower materials are provided "as is", without warranty of any kind. The maintainers are not liable for any claim, damage, or other liability arising from the use of the repository, sample data, or full dataset.
+
+For permission requests or dataset access, please contact the PolliFlower maintainers.
