@@ -6,7 +6,7 @@ This README records the commands used to reproduce the standard-split and challe
 /root/autodl-tmp/flower_baseline
 ```
 
-The standard split is `data_1`, and the challenging split is `data_hard`.
+The standard split is `data_standard`, and the challenging split is `data_hard`.
 
 ## 1. Environment
 
@@ -22,7 +22,7 @@ Set the split to run:
 
 ```bash
 # Standard split
-DATASET=data_1
+DATASET=data_standard
 OUTDIR=outputs_data1_clean
 
 # Challenging split
@@ -55,7 +55,7 @@ scripts/select_keypoint_rcnn_map_best.py
 scripts/eval_keypoint_rcnn_all_metrics.py
 ```
 
-`eval_yolov8_stigma_iou_tau080.py`, `train_mask_rcnn_stigma_tau080.py`, and `train_mask2former_stigma_tau080.py` use `StrictIoU@0.8`. The original `0.5` scripts should be kept unchanged.
+`eval_yolov8_stigma_iou_tau080.py`, `train_mask_rcnn_stigma_tau080.py`, and `train_mask2former_stigma_tau080.py` use `StrictIoU@0.8`. 
 
 ## 3. Flower Instance Detection
 
@@ -225,7 +225,7 @@ python scripts/train_mask2former_stigma_tau080.py \
 
 ## 5. Pollination Point Localization
 
-The main table reports `Pose mAP@0.5:0.95`, `StrictDist`, `StrictPCK@0.05`, and `StrictPCK@0.10`. `MPE` is an auxiliary absolute-error metric and is not recommended for cross-split comparison.
+The main table reports `Pose mAP@0.5`, `StrictDist`, `StrictPCK@0.05`, and `StrictPCK@0.10`. 
 
 ### 5.1 YOLOv8s-pose
 
@@ -256,19 +256,6 @@ yolo pose val \
   exist_ok=True
 ```
 
-Use raw test images for the custom point metrics to ensure that all test images are included:
-
-```bash
-python scripts/eval_yolov8_pose_point_metrics.py \
-  --model /root/autodl-tmp/flower_baseline/${OUTDIR}/yolov8_pollination_pose/yolov8s_pose_1024/weights/best.pt \
-  --images /root/autodl-tmp/flower_baseline/${DATASET}/test/images \
-  --annotations /root/autodl-tmp/flower_baseline/${DATASET}/test/annotations_with_ids \
-  --imgsz 1024 \
-  --conf 0.25 \
-  --box-iou 0.5 \
-  --device 0 \
-  --out /root/autodl-tmp/flower_baseline/${OUTDIR}/yolov8_pollination_pose_eval/yolov8s_pose_1024_test/point_metrics_rawtest.json
-```
 
 ### 5.2 YOLO11s-pose
 
@@ -313,9 +300,7 @@ python scripts/eval_yolov8_pose_point_metrics.py \
 
 ### 5.3 Keypoint R-CNN
 
-For fair checkpoint selection, Keypoint R-CNN uses validation `Pose mAP@0.5:0.95` to select `best_map.pt`. The task-specific strict metrics are reported only on the final test set.
-
-Train and save all epoch checkpoints:
+For fair checkpoint selection, Keypoint R-CNN uses validation `Pose mAP@0.5` to select `best_map.pt`. The task-specific strict metrics are reported only on the final test set.
 
 ```bash
 KPT_OUT=/root/autodl-tmp/flower_baseline/${OUTDIR}/keypoint_rcnn_pollination/keypointrcnn_r50_fpn_1024_mapbest
@@ -345,7 +330,7 @@ ln -sfn /root/autodl-tmp/flower_baseline/${DATASET}/val/annotations_with_ids \
   eval_views/${DATASET}_val_as_test/test/annotations_with_ids
 ```
 
-Select `best_map.pt` using validation `Pose mAP@0.5:0.95`:
+Select `best_map.pt` using validation `Pose mAP@0.5`:
 
 ```bash
 python scripts/select_keypoint_rcnn_map_best.py \
@@ -375,10 +360,9 @@ python scripts/eval_keypoint_rcnn_all_metrics.py \
 ## 6. Notes
 
 - Do not mix standard-split and challenging-split outputs.
-- Use `outputs_data1_clean` only for `data_1`.
+- Use `outputs_data1_clean` only for `data_standard`.
 - Use `outputs_data_hard` only for `data_hard`.
 - Avoid spaces after the line-continuation character `\`.
 - YOLO pose custom metrics should use raw split images, e.g. `${DATASET}/test/images`, rather than `${DATASET}/yolo_pollination_pose/images/test`.
 - `StrictIoU` for stigma segmentation is reported as `StrictIoU@0.8`.
-- For pollination point localization, `MPE` is not used as a main-table metric because it is an absolute pixel error and is not reliable for cross-split comparison.
 
