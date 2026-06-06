@@ -1,11 +1,9 @@
 ﻿# Full datasets
-/data/
-/data_1/
+/data_standard/
 /data_hard/
 /raw/
 
 # Training outputs
-/outputs/
 /outputs_data1_clean/
 /outputs_data_hard/
 /runs/
